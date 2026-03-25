@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d4335bab5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Bilal Miran</span></h1>
+            <p>Passionate Web Developer focused on <br>creating  clean, responsive, and user-friendly websites</p>
+        </div>
+    </div>
+</div>
+<!-- ----------about----------  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P style="text-align: justify;">I am currently studying Software Engineering at University of Wah.<br>
+                I am a passionate and motivated developer with a strong foundation in C++ and Object-Oriented Programming.
+                Currently, I am expanding my skills in web development, learning HTML, CSS, and JavaScript
+                to create modern, responsive websites. I am always eager to learn new technologies and
+                improve my skills, with the goal of becoming a professional software developer and building impactful digital solutions.</P>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    <p class="tab-links"  onclick="opentab('certificate')">Certificates</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills:</span><br>HTML<br>CSS<br>JavaScript<br>C++<br>Object-Oriented Programming(OOP)</li>
+                        <li><span>Other Skills:</span><br>Problem Solving<br>Teamwork<br>Communication</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Personal Projects Developer</span><br>Developed multiple projects including a 
+                        portfolio website and to-do list.<br>Applied programming concepts from C++ and OOP to
+                        improve logic building.<br>Gained hands-on experience in debugging and improving user experience.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025 - 2029(Expected)</span><br>BS Software Engineering from University of Wah.</li>
+                        <li><span>2024</span><br>FSC from Fazaia Degree College.</li>
+                        <li><span>2022</span><br>Matric from Fazaia Degree College.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificate">
+                    <ul>
+                        <li><span>2025</span><br>International Certificate in Oil and Gas Safety.</li>
+                        <li><span>2025</span><br>OSHA 48 Hours General Industry Standards.</li>
+                        <li><span>2024</span><br>(IOSH) Institute of Ocuppational Safety and Health.</li>
+                        <li><span>2024</span><br>Advance Fire Saftey Training.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------projects----------- -->
+ <div id="projects">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="projects-list">
+
+    <!-- Project 1 -->
+    <div class="project">
+        <i class="fa-solid fa-briefcase"></i>
+        <h2>Personal Portfolio Website</h2><br>
+        <p style="text-align: justify;">Designed and developed a personal portfolio website to showcase my skills, projects, 
+        certifications, and experience.</p>
+
+        <a href="#" class="learn-more">Learn more</a>
+
+        <div class="details">
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Features:</strong> Responsive design, smooth scrolling, clean UI</p>
+            <p><strong>Outcome:</strong> Improved frontend and UI skills</p>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <i class="fa-solid fa-calculator"></i>
+        <h2>Calculator Web App</h2><br>
+        <p>A simple calculator built using JavaScript.</p>
+
+        <a href="#" class="learn-more">Learn more</a>
+
+        <div class="details">
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Features:</strong> Real-time calculations, interactive UI</p>
+            <p><strong>Outcome:</strong> Learned DOM manipulation</p>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+        <i class="fa-solid fa-list"></i>
+        <h2>To-Do List</h2><br>
+        <p>A task management application.</p>
+
+        <a href="#" class="learn-more">Learn more</a>
+
+        <div class="details">
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Features:</strong> Add/remove tasks, dynamic updates</p>
+            <p><strong>Outcome:</strong> Improved JavaScript skills</p>
+        </div>
+    </div>
+</div>
+   
+ </div>
+ <!-- -----------portfolio----------- -->
+  <div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title">Achievements</h1>
+         <div class="achievements-list">
+            <div class="achievement">
+                <img src="Images/achievement 1.png">
+                <div class="layer">
+                    <h3>OSHA & IOSH Certified</h3>
+                    <p> Completed internationally recognized safety certifications.<br>  
+                    Gained knowledge of professional standards and workplace safety. </p>
+                </div>
+            </div>
+            <div class="achievement">
+                <img src="Images/achievemnt 2.jpeg">
+                <div class="layer">
+                    <h3>Project Development </h3>
+                    <p> Built multiple projects including portfolio, calculator, and to-do list.<br>  
+                    Applied HTML, CSS, JavaScript, and C++ in real-world tasks.</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <img src="Images/achievement 3.jpeg">
+                <div class="layer">
+                    <h3>Programming Skills</h3>
+                    <p> Strong foundation in C++ and Object-Oriented Programming.<br>  
+                    Skilled in problem-solving and logical thinking. </p>
+                </div>
+            </div>
+         </div>
+    </div>
+  </div>
+  <!-- -----------contact-------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titlee">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bilal006ch@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 03295909779</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bilal_miran13"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bilalmiran"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Bilal Miran CV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="YOUR_FORM_NAME">
+                    <input type="text" name="Name" placeholder="Your Name" required> 
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bilal. All Rights Reserved.</p>
+    </div>
+   </div>
+
+<!-- -----------about----------- -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- ---------project------------ -->
+<script>
+document.querySelectorAll(".learn-more").forEach(button => {
+    button.addEventListener("click", function(e){
+        e.preventDefault();
+
+        const details = this.nextElementSibling;
+        details.classList.toggle("show");
+    });
+});
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyGwAwbVyDyzZvwEDNa6621-ydJ3W8gQcEXkPBfCaDzlvPFpURvZl6bjd6wqtM-W4GGtA/exec'
+	const form = document.forms['YOUR_FORM_NAME']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>  
